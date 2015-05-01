@@ -1,0 +1,30 @@
+
+<div class="container">
+	<div class="row">
+<h1>Lista de Comics</h1>
+</div>
+<div class="row">
+
+ 
+
+    <% @comics.each do |comic| %>
+     <div class="col-lg-4">
+     	<div class="caption" align="center">
+<h4><%= comic.nombre %></h4>
+</div>
+        <div data-configid="<%= comic.extension %>" style="width:400px; height:300px;" class="issuuembed col-lg-4"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+
+</div>
+
+      
+
+
+
+    <% end %>
+ 
+
+</div>
+
+
+
+
